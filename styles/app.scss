@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,700,900');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  background: #fff;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*end reset*/
+
+/*APP*/
+#root {
+  height: 100vh;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 0 auto 10px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.submit {
+  background-color: #4CAF50;
+}
+
+.clear {
+  background-color: #6B9DDE;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+
+/*NAVIGATION*/
+.navigation {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f4f5f7;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #686a70;
+  }
+  &__item {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+    background-color: #fff;
+    line-height: 10vh;
+    &:hover {
+      background: #f4f5f7;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      position: relative;
+      text-decoration: none;
+      color: #686a70;
+    }
+  }
+  &__logo {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    background: url(http://i.imgur.com/fbME3nU.png) no-repeat #fff center;
+    background-size: contain;
+  }
+  &__button {
+    width: 10%;
+    height: 100%;
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+/*HOME PAGE*/
+.home {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+  &__body {
+    padding: 20px 0 0 70px;
+  }
+}
+
+/*LOGIN PAGE*/
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  &__form {
+    width: 25%;
+    justify-content: center;
+    background-color: ghostwhite;
+    border: 1px solid darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    &__body {
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__input {
+        width: 60%;
+        display: block;
+        margin-bottom: 3px;
+      }
+      &__button {
+        background-color: #4CAF50;
+        border: none;
+        color: #fff;
+        width: 40%;
+        padding: 10px;
+        margin: 10px 0 20px 0;
+      }
+    }
+    &__message {
+      height: 15%;
+      color: #D43C30;
+    }
+  }
+}
+
+/*REGISTRATION PAGE*/
+.registration {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    background-color: ghostwhite;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+    align-items: center;
+    width: 80%;
+    padding-top: 10px;
+    &__buttons-box {
+      display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+      height: 30px;
+      margin: 5px 0 10px 0;
+      &__button {
+        border: none;
+        color: #fff;
+        width: 10vw;
+        border-radius: 5px;
+      }
+    }
+    &__input {
+      display: flex;
+      margin-bottom: 3px;
+      &__label {
+        width: 17vw;
+      }
+      &__body {
+        display: flex;
+        &__input {
+          width: 18vw;
+        }
+      }
+    }
+  }
+  &__input {
+    margin: 0 0 5px 15px;
+    width: 50%;
+    display: inline-block;
+  }
+  &__error-message {
+    display: inline-block;
+    color: red;
+  }
+  &__button {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+  }
+
+}
+
+/*PERSONAL CABINET PAGE*/
+.cabinet {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  &__body {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    &__left {
+      width: 25%;
+      margin-right: 5px;
+      &__title-name {
+        font-size: 25px;
+        margin-bottom: 5px;
+        &__title {
+          color: #342F30;
+        }
+        &__data {
+          color: #000;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: ghostwhite;
+      width: 50vw;
+      border-radius: 10px;
+      border: 1px solid darkgrey;
+      &__title {
+        font-size: 25px;
+      }
+      &__form {
+        display: flex;
+        flex-direction: column;
+        &__buttons-box {
+          display: flex;
+          justify-content: space-evenly;
+          height: 30px;
+          margin: 5px 0 10px 0;
+          &__button {
+            border: none;
+            color: #fff;
+            width: 10vw;
+            justify-content: space-around;
+          }
+        }
+        &__input {
+          display: flex;
+          margin-bottom: 3px;
+          &__label {
+            width: 17vw;
+          }
+          &__body {
+            display: flex;
+            &__input {
+              width: 18vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*TICKETS PAGE*/
+.tickets {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  &__prev-next {
+    &__prev-page {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      top: 45%;
+      left: 0;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    &__next-page {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      top: 45%;
+      right: 0;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  &__buttons-box {
+    position: sticky;
+    top: 3%;
+    &__show {
+      float: right;
+      width: 4%;
+      border-radius: 5px;
+      margin: 3px;
+      height: 30px;
+      background-color: #D43C30;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  .tickets__box {
+    width: 70%;
+    padding: 10px 0;
+    margin: 0 auto;
+    &__left {
+      width: 30%;
+      height: 300px;
+      float: left;
+      overflow: hidden;
+      border-radius: 10px 0 0 10px;
+      background: transparent;
+      img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+      }
+    }
+    &__right {
+      position: relative;
+      width: 70%;
+      float: left;
+      background-color: ghostwhite;
+      height: 300px;
+      border-radius: 0 10px 10px 0;
+      padding: 30px 15px 0 40px;
+      box-sizing: border-box;
+      &__name {
+        font-size: 40px;
+        letter-spacing: 1px;
+      }
+      &__title {
+        margin-top: 10px;
+        letter-spacing: 1px;
+        line-height: 20px;
+      }
+      &__price {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      &__count {
+        font-size: 20px;
+      }
+      &__button {
+        position: absolute;
+        background-color: #4CAF50;
+        border: none;
+        color: #fff;
+        width: 20%;
+        left: 70%;
+        top: 85%;
+        height: 10%;
+      }
+      &__button:disabled {
+        background-color: #AF4E43;
+      }
+    }
+  }
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 25px;
+  &__items:nth-child(2) {
+    border-radius: 5px 5px 0 0;
+  }
+  &__items:last-child {
+    border-radius: 0 0 5px 5px;
+  }
+  .blue {
+    background: #75a9aa;
+  }
+  .white {
+    border: none;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background: #fff;
+  }
+  &__items {
+    border: solid 1px black;
+    width: 98vw;
+    &__title {
+      width: 100%;
+      padding-bottom: 3px;
+      div {
+        display: inline-block;
+        text-align: center;
+      }
+      &__id {
+        width: 3vw;
+      }
+      &__name {
+        width: 40vw;
+      }
+      &__price {
+        width: 10vw;
+      }
+      &__count {
+        width: 20vw;
+      }
+      &__total {
+        width: 10vw;
+      }
+      &__button {
+        background-color: #4CAF50;
+        color: #fff;
+        width: 3vw;
+        height: 3vw;
+        padding: 0;
+        border: none;
+        border-radius: 2vw;
+        margin: 0 1vw;
+        font-size: 2vw;
+      }
+      &__button:focus {
+        outline: -webkit-focus-ring-color auto 0;
+      }
+      &__button:disabled {
+        background-color: #AF4E43;
+      }
+      &__buy {
+        margin-right: 3px;
+        background-color: #4CAF50;
+        border: none;
+        color: #fff;
+        width: 6vw;
+        height: 3vw;
+        justify-content: space-around;
+        border-radius: 3px;
+        font-size: 2vw;
+      }
+      &__delete {
+        margin-right: 3px;
+        background-color: #AF4E43;
+        border: none;
+        color: #fff;
+        width: 7vw;
+        height: 3vw;
+        justify-content: space-around;
+        border-radius: 3px;
+        font-size: 2vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .registration__form {
+    width: 50%;
+  }
+  .cart__items__title__buy {
+    width: 4vw;
+    height: 2vw;
+    font-size: 1vw;
+  }
+  .cart__items__title__delete {
+    width: 5vw;
+    height: 2vw;
+    font-size: 1vw;
+  }
+  .cart__items__title__button {
+    width: 1.5vw;
+    height: 1.5vw;
+    font-size: 1vw;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .cabinet__body {
+    flex-direction: column;
+  }
+  .cabinet__body__right {
+    width: 90vw;
+    align-self: center;
+  }
+  .cabinet__body__left {
+    padding-left: 5vw;
+    margin-bottom: 5px;
+  }
+  .cabinet__body__right__form__input__label {
+    width: 30vw;
+  }
+  .tickets .tickets__box__left {
+    width: 40%;
+  }
+  .tickets .tickets__box__right {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .login__form {
+    width: 60%;
+    justify-content: center;
+    background-color: ghostwhite;
+    border: 1px solid darkgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .tickets .tickets__box__left {
+    width: 20%;
+  }
+}

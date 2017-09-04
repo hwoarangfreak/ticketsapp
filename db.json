@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "access": "admin",
+      "firstname": "John",
+      "secondname": "Smith",
+      "email": "john_smith@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user123",
+      "access": "user",
+      "firstname": "Jimmy",
+      "secondname": "Garden",
+      "email": "jimmy_garden@mail.ru"
+    },
+    {
+      "id": 3,
+      "username": "hello",
+      "password": "world",
+      "access": "user",
+      "firstname": "Hello",
+      "secondname": "World",
+      "email": "hello_world@helloworld.com"
+    },
+    {
+      "username": "hwoarang",
+      "password": "123",
+      "firstname": "Valery",
+      "secondname": "Volodko",
+      "email": "hwoarangfreak@gmail.com",
+      "access": "user",
+      "id": 4
+    },
+    {
+      "username": "Valery",
+      "password": "Volodko",
+      "firstname": "qwe",
+      "secondname": "wqeq",
+      "email": "eqweqw@mail.ru",
+      "access": "user",
+      "id": 5
+    },
+    {
+      "username": "hi123",
+      "password": "jinx",
+      "firstname": "jinxx",
+      "secondname": "jdi",
+      "email": "keqw@heqw.eqw",
+      "access": "user",
+      "id": 6
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "name": "Batman vs. Superman",
+      "title": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 27,
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/20/Batman_v_Superman_poster.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Iron Man",
+      "title": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 22,
+      "url": "https://s-media-cache-ak0.pinimg.com/736x/2c/bb/04/2cbb04e7ef9266e1e57a9b0e75bc555f--iron-man-avengers-marvel-iron-man.jpg"
+    },
+    {
+      "id": 3,
+      "name": "The Avengers",
+      "title": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 24,
+      "url": "https://i.annihil.us/u/prod/marvel/i/mg/6/50/521f70b81f7d3/portrait_incredible.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Thor",
+      "title": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 14,
+      "url": "https://vignette3.wikia.nocookie.net/marvelmovies/images/c/c5/Avengers_age_of_ultron_thor-art.jpg/revision/latest/scale-to-width-down/280?cb=20160512192534"
+    },
+    {
+      "id": 5,
+      "name": "Iron Man Three",
+      "title": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 12,
+      "url": "https://i.annihil.us/u/prod/marvel/i/mg/c/a0/521f70fab9fd8/portrait_incredible.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Captain America: The First Avenger",
+      "title": "Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a 'Super-Soldier serum'. But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 22,
+      "url": "http://cdn1-www.superherohype.com/assets/uploads/2015/03/cap300.jpg"
+    },
+    {
+      "id": 7,
+      "name": "The Shawshank Redemption",
+      "title": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 5,
+      "url": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_UY1200_CR88,0,630,1200_AL_.jpg"
+    },
+    {
+      "id": 8,
+      "name": "The Godfather",
+      "title": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 13,
+      "url": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmNjQ1ZDYtNDgzMy00OGE0LWE4N2YtNTkzNWQ5ZDhlNGJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY268_CR3,0,182,268_AL_.jpg"
+    },
+    {
+      "id": 9,
+      "name": "The Dark Knight",
+      "title": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 21,
+      "url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Pulp Fiction",
+      "title": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 13,
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Fight Club",
+      "title": "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club that evolves into something much, much more.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 16,
+      "url": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGY5Y2RjMmItNDg5Yy00NjUwLThjMTEtNDc2OGUzNTBiYmM1XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "name": "The Mechanic",
+      "title": "Follows an elite hit man as he teaches his trade to an apprentice who has a connection to one of his previous victims.",
+      "eventTime": "20.09.2017",
+      "price": 5,
+      "count": 12,
+      "url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyMjk1NjI1M15BMl5BanBnXkFtZTcwODcyNjAxNA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "id": 12
+    }
+  ]
+}
